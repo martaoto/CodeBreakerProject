@@ -26,7 +26,7 @@ function guess() {
     }
 }
 
-function getResult(input) {
+function getResults(input) {
 	let html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
 	for(i = 0; i < input.length; i++) {
 		if(input.charAt(i) == answer.value.charAt(i)) {
