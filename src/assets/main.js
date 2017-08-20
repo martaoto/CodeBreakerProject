@@ -11,7 +11,7 @@ function guess() {
     if(validateInput(input.value)) {
     	return;
     }
-    attempt.valule++;
+    attempt.value++;
 
     if(getResult(input.value)) {
     	setMessage('You Win! Congrats! :D');
@@ -38,7 +38,7 @@ function getResult(input) {
 		}
 	}
 	html += '</div></div>';
-	document.getElementById('results'),innerHTML += html;
+	document.getElementById('results').innerHTML += html;
 
 	if(input == answer.value) {
 		return true;
