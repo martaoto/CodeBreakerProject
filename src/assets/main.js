@@ -8,17 +8,17 @@ function guess() {
     	setHiddenFields();
     }
 
-    if(validateInput(input.value)) {
+    if(!validateInput(input.value)) {
     	return;
     }
     attempt.value++;
 
-    if(getResult(input.value)) {
-    	setMessage('You Win! Congrats! :D');
+    if(getResults(input.value)) {
+    	setMessage('You Win! :)');
     	showAnswer(true);
     	showReplay();
     } else if(attempt.value >= 10) {
-    	setMessage('You Lose! Sorry! :C');
+    	setMessage('You Lose! :C');
     	showAnswer(false);
     	showReplay();
     } else {
